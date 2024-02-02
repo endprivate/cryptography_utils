@@ -18,3 +18,4 @@ def is_private_key(private_key: bytes) -> bool:
         return True
     except (ValueError, IndexError):
         return False
+

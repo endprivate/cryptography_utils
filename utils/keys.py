@@ -1,8 +1,13 @@
 import os
-from Crypto.PublicKey import RSA
+from Crypto.PublicKey import RSA, ECC
 import hash
-def generate_private_key(key_size=2048):
+def generate_private_key_rsa(key_size=2048):
     key = RSA.generate(key_size)
+    private_key = key.export_key()
+    return private_key
+
+def generate_private_key_ecc(curve='P-256'):
+    key = ECC.generate(curve=curve)
     private_key = key.export_key()
     return private_key
 

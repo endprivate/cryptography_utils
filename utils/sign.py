@@ -1,6 +1,6 @@
 from Crypto.Signature import pkcs1_15
 from Crypto.PublicKey import RSA
-import utils.hash_gen as hash_gen
+import hash_gen
 
 def generate_signature(private_key: bytes, data: bytes, hash_type: str="sha256") -> bytes:
     key = RSA.import_key(private_key)

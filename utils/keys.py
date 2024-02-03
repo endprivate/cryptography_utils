@@ -1,6 +1,6 @@
 import os
 from Crypto.PublicKey import RSA, ECC
-import utils.hash_gen as hash_gen
+import hash_gen
 def generate_private_key_rsa(key_size=2048):
     key = RSA.generate(key_size)
     private_key = key.export_key()

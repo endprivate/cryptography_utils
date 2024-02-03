@@ -1,1 +1,1 @@
-from utils import encrypt, hash, keys, is_valid, sign
+from .utils import encrypt, hash_gen, keys, is_valid, sign

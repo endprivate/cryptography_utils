@@ -1,5 +1,5 @@
 import hashlib
-def Hash(type: str, data: str):
+def Hash(type: str, data: str="sha256"):
     hash_functions = {
         'sha256': hashlib.sha256,
         'sha512': hashlib.sha512,

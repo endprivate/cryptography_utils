@@ -1,1 +1,1 @@
-from . import AES, hash, keys, is_valid
+from . import encrypt, hash, keys, is_valid, sign

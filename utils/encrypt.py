@@ -19,7 +19,7 @@ class AESCipher:
         plaintext = cipher.decrypt_and_verify(ciphertext, tag)
         return plaintext.decode('utf-8')
 #TODO: Fix classes below AESCipher
-class DESCipher:
+class _DESCipher:
     def __init__(self, key, mode=DES.MODE_ECB):
         self.key = key
         self.mode = mode
@@ -36,7 +36,7 @@ class DESCipher:
         plaintext = cipher.decrypt_and_verify(ciphertext, tag)
         return plaintext.decode('utf-8')
 
-class DES3Cipher:
+class _DES3Cipher:
     def __init__(self, key, mode=DES3.MODE_ECB):
         self.key = key
         self.mode = mode
@@ -53,7 +53,7 @@ class DES3Cipher:
         plaintext = cipher.decrypt_and_verify(ciphertext, tag)
         return plaintext.decode('utf-8')
 
-class BlowfishCipher:
+class _BlowfishCipher:
     def __init__(self, key, mode=Blowfish.MODE_ECB):
         self.key = key
         self.mode = mode
@@ -70,7 +70,7 @@ class BlowfishCipher:
         plaintext = cipher.decrypt_and_verify(ciphertext, tag)
         return plaintext.decode('utf-8')
 
-class ARC4Cipher:
+class _ARC4Cipher:
     def __init__(self, key):
         self.key = key
 

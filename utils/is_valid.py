@@ -1,4 +1,4 @@
-def is_hash(hash_value: str, hash_type: str) -> bool:
+def is_hash(hash_value: str, hash_type: str="sha256") -> bool:
     hash_functions = {
         'sha256': 64,
         'sha512': 128,

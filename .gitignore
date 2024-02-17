@@ -3,3 +3,4 @@ venv
 *.pyc
 __pycache__/hash_generator.cpython-311.pyc
 test.py
+save.txt
